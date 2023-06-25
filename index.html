@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Demo Task</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/5.5.0/css/foundation.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css'>
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <main>
+        <!-- header menu start -->
+        <header class="header" id="myHeader">
+            <div class="container">
+                <div class="row-wrap">
+                    <div class="nav-wrap">
+                        <ul class="nav-list">
+                            <li class="active">
+                                <a href="#">Destinations</a>
+                            </li>
+                            <li>
+                                <a href="#">GroupJourney</a>
+                            </li>
+                            <li>
+                                <a href="#">Adventure</a>
+                            </li>
+                            <li class="mobile_menu">
+                                <a href="#">Business Travel</a>
+                            </li>
+                            <li class="mobile_menu">
+                                <a href="#">Offers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-wrap">
+                        <span class="logo">
+                            <a href="#" target="_blank">
+                                <svg width="283" height="30" viewBox="0 0 283 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.3867 3.51172C9.94531 3.51172 7.44922 3.58203 5.72656 3.61719C5.35742 3.61719 4.9707 3.63477 4.60156 3.63477C2.91406 3.63477 1.24414 3.56445 0.259766 3.51172V4.23242C2.52734 4.33789 2.94922 4.70703 2.94922 7.32617V25.1855C2.94922 27.8047 2.54492 28.1738 0.259766 28.2793V29C1.47266 28.9297 3.66992 28.8945 5.79688 28.8945C7.41406 28.8945 9.92773 29 11.0527 29C20.1055 29 25.3789 23.8145 25.3789 15.9746C25.3789 7.94141 20.8613 3.51172 11.3867 3.51172ZM11.3516 4.16211C17.1523 4.16211 19.4023 8.04688 19.4023 16.1152C19.4023 23.9551 17.4512 28.3496 11.3867 28.3496C9.1543 28.3496 8.67969 27.7695 8.67969 25.2559V7.25586C8.67969 4.77734 9.1543 4.16211 11.3516 4.16211ZM32.5332 1.08594C30.5117 1.08594 29.2461 2.14062 29.2461 3.86328C29.2461 5.60352 30.5117 6.6582 32.5332 6.6582C34.5195 6.6582 35.8027 5.60352 35.8027 3.86328C35.8027 2.14062 34.5195 1.08594 32.5332 1.08594ZM35.3633 9.98047C33.8516 10.332 32.1113 10.4902 30.1074 10.4902C29.3867 10.4902 28.6309 10.4375 27.875 10.3672V11.123C29.6152 11.123 30.1777 12.1426 30.1777 14.3047V25.6602C30.1777 27.6641 29.5449 28.2441 27.875 28.2441V29C28.8242 28.9648 30.9863 28.8594 32.8496 28.8594C34.7305 28.8594 36.752 28.9648 37.666 29V28.2441C35.9785 28.2441 35.3633 27.6641 35.3633 25.6602V9.98047ZM47.8086 9.875C45.3828 9.875 43.625 10.3848 42.3418 11.1055C41.1641 11.791 40.3203 12.793 40.3203 14.1113C40.3203 15.6934 41.3047 16.8887 42.8691 16.8887C44.6445 16.8887 45.8047 15.7988 45.8047 14.3047C45.8047 12.8457 44.9609 11.9141 43.6777 11.4746C44.3281 10.8418 45.3828 10.5957 46.2441 10.5957C48.3711 10.5957 49.1797 11.9316 49.1797 13.8125V16.625C49.1797 18.1719 47.1055 18.8574 44.4512 19.8594C41.1113 21.0898 39.3887 22.5488 39.3887 25.1504C39.3887 27.7695 41.252 29.2461 43.9414 29.2461C45.9629 29.2461 48.0195 28.3496 49.25 26.3281C49.2676 27.875 50.0762 29.2461 52.7129 29.2461C54.541 29.2461 55.7363 28.8066 56.8262 27.9277L56.457 27.3125C56.0527 27.6289 55.6484 27.9277 55.1387 27.9277C54.5586 27.9277 54.3652 27.4883 54.3652 26.3281V16.5371C54.3652 14.0234 54.1367 12.582 53.082 11.4922C51.9219 10.2969 50.1289 9.875 47.8086 9.875ZM49.1797 25.4844C48.4238 26.5566 47.6328 26.9434 46.7539 26.9434C45.4707 26.9434 44.5039 26.1348 44.5039 24.1484C44.5039 21.9863 45.6816 20.8086 46.9473 19.877C48.1602 19.1211 48.8457 18.6465 49.1797 18.1016V25.4844ZM86.7969 15.957C86.7969 13.584 86.498 12.1953 85.6895 11.2812C84.9512 10.4375 83.7559 9.875 81.752 9.875C79.3262 9.875 77.0938 10.6836 75.7754 13.4258C75.6172 12.4941 75.3184 11.8086 74.8613 11.2812C74.123 10.4375 72.9102 9.875 70.9238 9.875C68.5508 9.875 66.4766 10.8418 65.3516 13.2324V9.98047C63.8398 10.332 62.0996 10.4902 60.0957 10.4902C59.375 10.4902 58.6191 10.4375 57.8633 10.3672V11.123C59.6035 11.123 60.166 12.1426 60.166 14.3047V25.6602C60.166 27.6641 59.5332 28.2441 57.8633 28.2441V29C58.8125 28.9648 60.9746 28.8594 62.8203 28.8594C64.4902 28.8594 66.2656 28.9648 67.0742 29V28.2441C65.791 28.2441 65.3516 27.6641 65.3516 25.6602V15.623C65.3516 13.25 66.916 11.457 68.8496 11.457C70.4844 11.457 70.7832 12.6699 70.7832 14.4629V25.6602C70.7832 27.6641 70.3086 28.2441 69.043 28.2441V29C69.8867 28.9648 71.75 28.8594 73.5078 28.8594C75.1777 28.8594 77.1816 28.9648 78.043 29V28.2441C76.4961 28.2441 75.9688 27.6641 75.9688 25.6602V15.957L75.9512 15.2188C76.2324 13.1094 77.709 11.457 79.4668 11.457C81.2598 11.457 81.6113 12.6699 81.6113 14.4629V25.6602C81.6113 27.6641 81.1543 28.2441 79.8887 28.2441V29C80.7324 28.9648 82.5957 28.8594 84.3535 28.8594C86.1113 28.8594 88.1855 28.9648 89.0996 29V28.2441C87.4297 28.2441 86.7969 27.6641 86.7969 25.6602V15.957ZM99.7344 9.875C94.5664 9.875 90.9277 12.582 90.9277 19.7012C90.9277 26.8379 94.5664 29.5098 99.7344 29.5098C104.92 29.5098 108.559 26.8379 108.559 19.7012C108.559 12.582 104.92 9.875 99.7344 9.875ZM99.7344 10.5957C101.703 10.5957 103.127 13.2676 103.127 19.7012C103.127 26.1523 101.703 28.7891 99.7344 28.7891C97.7832 28.7891 96.3594 26.1523 96.3594 19.7012C96.3594 13.2676 97.7832 10.5957 99.7344 10.5957ZM124.168 9.875C121.637 9.875 119.492 10.7891 118.297 13.2324V9.98047C116.785 10.332 115.045 10.4902 113.041 10.4902C112.32 10.4902 111.564 10.4375 110.809 10.3672V11.123C112.549 11.123 113.111 12.1426 113.111 14.3047V25.6602C113.111 27.6641 112.479 28.2441 110.809 28.2441V29C111.758 28.9648 113.92 28.8594 115.766 28.8594C117.523 28.8594 119.387 28.9648 120.23 29V28.2441C118.807 28.2441 118.297 27.6641 118.297 25.6602V15.623C118.297 13.25 119.844 11.457 121.865 11.457C123.658 11.457 124.08 12.6699 124.08 14.4629V25.6602C124.08 27.6641 123.57 28.2441 122.146 28.2441V29C123.025 28.9648 124.977 28.8594 126.822 28.8594C128.58 28.8594 130.654 28.9648 131.568 29V28.2441C129.898 28.2441 129.266 27.6641 129.266 25.6602V15.957C129.266 13.5137 128.932 12.1953 128.141 11.2812C127.402 10.4375 126.225 9.875 124.168 9.875ZM150.605 0.822266C149.111 1.17383 147.371 1.31445 145.35 1.31445C144.629 1.31445 143.873 1.2793 143.117 1.20898V1.96484C144.857 1.96484 145.42 2.98438 145.42 5.14648V11.2285C144.453 10.2617 143.082 9.875 141.447 9.875C136.824 9.875 133.396 13.0918 133.396 19.6133C133.396 26.4688 136.455 29.5098 140.744 29.5098C143.082 29.5098 144.594 28.4023 145.42 26.3281V29.3691C146.932 29.0176 148.672 28.877 150.676 28.877C151.396 28.877 152.152 28.9121 152.908 28.9824V28.2266C151.168 28.2266 150.605 27.207 150.605 25.0625V0.822266ZM142.238 27.9453C140.164 27.9453 138.828 25.8359 138.846 19.6836C138.828 13.7422 140.322 10.9121 142.801 10.9121C143.82 10.9121 144.77 11.2812 145.42 12.125V24.9219C145.086 26.8203 143.715 27.9453 142.238 27.9453ZM184.215 3.51172C180.963 3.61719 176.34 3.61719 173.123 3.61719C169.906 3.61719 165.248 3.61719 161.996 3.51172C162.172 5.95508 162.242 8.43359 162.242 9.62891C162.242 10.7012 162.207 11.7031 162.137 12.3711H162.963C164.193 6.28906 166.057 4.33789 169.449 4.33789H170.24V24.8867C170.24 27.8223 169.59 28.2441 166.391 28.2793V29C167.814 28.9473 170.311 28.8945 172.965 28.8945C175.619 28.8945 178.291 28.9473 179.82 29V28.2793C176.621 28.2441 175.971 27.8223 175.971 24.8867V4.33789H176.762C180.119 4.33789 182.018 6.30664 183.23 12.3711H184.057C183.986 11.7031 183.951 10.7012 183.951 9.62891C183.951 8.43359 184.021 5.95508 184.215 3.51172ZM198.365 9.875C196.098 9.875 194.357 11.4043 193.496 13.3379V9.98047C191.984 10.332 190.244 10.4902 188.24 10.4902C187.52 10.4902 186.764 10.4375 186.008 10.3672V11.123C187.748 11.123 188.311 12.1426 188.311 14.3047V25.6602C188.311 27.6641 187.678 28.2441 186.008 28.2441V29C186.992 28.9648 189.189 28.8594 191.158 28.8594C193.426 28.8594 195.764 28.9648 196.871 29V28.2441C194.604 28.2441 193.496 27.6113 193.496 25.291V15.7637C193.496 13.8301 194.85 11.4395 196.766 11.123C196.941 11.0703 197.117 11.0352 197.275 11.0352C197.451 11.0352 197.609 11.0703 197.75 11.123C196.854 11.7207 196.168 12.582 196.168 13.9004C196.168 15.3066 197.17 16.2207 198.857 16.2207C200.545 16.2207 201.652 14.9727 201.652 13.1973C201.652 11.5801 200.703 9.875 198.365 9.875ZM211.391 9.875C208.965 9.875 207.207 10.3848 205.924 11.1055C204.746 11.791 203.902 12.793 203.902 14.1113C203.902 15.6934 204.887 16.8887 206.451 16.8887C208.227 16.8887 209.387 15.7988 209.387 14.3047C209.387 12.8457 208.543 11.9141 207.26 11.4746C207.91 10.8418 208.965 10.5957 209.826 10.5957C211.953 10.5957 212.762 11.9316 212.762 13.8125V16.625C212.762 18.1719 210.688 18.8574 208.033 19.8594C204.693 21.0898 202.971 22.5488 202.971 25.1504C202.971 27.7695 204.834 29.2461 207.523 29.2461C209.545 29.2461 211.602 28.3496 212.832 26.3281C212.85 27.875 213.658 29.2461 216.295 29.2461C218.123 29.2461 219.318 28.8066 220.408 27.9277L220.039 27.3125C219.635 27.6289 219.23 27.9277 218.721 27.9277C218.141 27.9277 217.947 27.4883 217.947 26.3281V16.5371C217.947 14.0234 217.719 12.582 216.664 11.4922C215.504 10.2969 213.711 9.875 211.391 9.875ZM212.762 25.4844C212.006 26.5566 211.215 26.9434 210.336 26.9434C209.053 26.9434 208.086 26.1348 208.086 24.1484C208.086 21.9863 209.264 20.8086 210.529 19.877C211.742 19.1211 212.428 18.6465 212.762 18.1016V25.4844ZM235.701 10.5078C234.752 10.5078 233.346 10.4727 232.238 10.3672V11.123C233.855 11.2285 234.875 12.125 234.875 13.9883C234.875 14.7617 234.699 15.7109 234.312 16.8535L231.729 24.0078L227.598 13.0742C227.475 12.7051 227.422 12.4062 227.422 12.1602C227.422 11.1055 228.459 11.123 229.672 11.123V10.3672C228.23 10.4902 226.473 10.5605 224.996 10.5605C222.992 10.5605 221.41 10.4902 219.881 10.3672V11.123C220.391 11.123 221.217 11.2988 221.973 13.1445L228.371 29.0703C228.775 29.0352 229.162 29.0176 229.549 29.0176C229.936 29.0176 230.34 29.0352 230.727 29.0703L236 14.2168C236.738 12.0723 237.564 11.3516 238.461 11.123V10.3672C237.846 10.4727 236.668 10.5078 235.701 10.5078ZM249.395 26.5391C247.109 26.5391 244.701 24.5879 244.701 19.5781C244.701 18.998 244.719 18.4004 244.771 17.873H254.844C254.844 12.2305 252.277 9.875 248.076 9.875C242.961 9.875 239.27 13.1973 239.27 19.877C239.27 26.4512 242.715 29.5098 247.566 29.5098C251.557 29.5098 253.912 26.6094 254.773 23.9023L254.123 23.6562C252.664 26.0469 250.836 26.5391 249.395 26.5391ZM247.865 10.6484C249.623 10.6484 250.379 13.6719 250.309 17.1875H244.666C244.965 12.5293 246.248 10.6484 247.865 10.6484ZM264.301 0.822266C262.807 1.17383 261.049 1.31445 259.045 1.31445C258.324 1.31445 257.568 1.2793 256.812 1.20898V1.96484C258.553 1.96484 259.115 2.98438 259.115 5.14648V25.6602C259.115 27.6641 258.5 28.2441 256.812 28.2441V29C257.779 28.9648 259.924 28.8594 261.805 28.8594C263.668 28.8594 265.689 28.9648 266.604 29V28.2441C264.934 28.2441 264.301 27.6641 264.301 25.6602V0.822266ZM275.287 9.875C272.018 9.875 269.1 11.6328 269.1 14.832C269.1 17.7324 271.262 19.3672 273.617 21.2129C275.691 22.8301 277.256 24.0078 277.256 26.1172C277.256 27.9629 275.973 28.6836 274.725 28.6836C271.701 28.6836 270.312 25.959 269.873 22.0566H269.1C269.1 25.6953 269.064 27.6992 268.959 29.2461H269.715C269.891 28.4727 270.189 27.9629 270.594 27.9629C270.646 27.9629 270.699 27.9805 270.752 27.998C271.262 28.1562 271.771 28.4199 272.422 28.7539C273.23 29.1934 274.355 29.5098 275.797 29.5098C279.506 29.5098 282.617 27.4531 282.617 24.166C282.617 21.3184 280.719 19.7715 278.311 17.9961C276.096 16.3438 273.881 15.1484 273.881 12.9863C273.881 11.5098 274.936 10.666 276.324 10.666C279.4 10.666 280.578 13.584 280.947 16.2383H281.703C281.703 13.0391 281.738 11.2812 281.861 9.91016H281.088C280.965 10.8066 280.666 11.2285 280.244 11.2285C280.051 11.2285 279.84 11.1406 279.594 10.9824C278.891 10.5254 277.309 9.875 275.287 9.875Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="nav-wrap2">
+                        <ul class="nav-list">
+                            <li class="desktop">
+                                <a href="#">Business Travel</a>
+                            </li>
+                            <li class="desktop">
+                                <a href="#">Offers</a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.875 15.0625L11.8438 11.0312C11.7812 10.9688 11.6875 10.9375 11.5938 10.9375H11.25C12.3438 9.75 13 8.21875 13 6.5C13 2.9375 10.0625 0 6.5 0C2.90625 0 0 2.9375 0 6.5C0 10.0938 2.90625 13 6.5 13C8.1875 13 9.75 12.3438 10.9062 11.2812V11.5938C10.9062 11.7188 10.9375 11.8125 11 11.875L15.0312 15.9062C15.1875 16.0625 15.4062 16.0625 15.5625 15.9062L15.875 15.5938C16.0312 15.4375 16.0312 15.2188 15.875 15.0625ZM6.5 12C3.4375 12 1 9.5625 1 6.5C1 3.46875 3.4375 1 6.5 1C9.53125 1 12 3.46875 12 6.5C12 9.5625 9.53125 12 6.5 12Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.78125 9C8.875 9 8.46875 9.5 7 9.5C5.5 9.5 5.09375 9 4.1875 9C1.875 9 0 10.9062 0 13.2188V14.5C0 15.3438 0.65625 16 1.5 16H12.5C13.3125 16 14 15.3438 14 14.5V13.2188C14 10.9062 12.0938 9 9.78125 9ZM13 14.5C13 14.7812 12.75 15 12.5 15H1.5C1.21875 15 1 14.7812 1 14.5V13.2188C1 11.4375 2.40625 10 4.1875 10C4.8125 10 5.40625 10.5 7 10.5C8.5625 10.5 9.1875 10 9.78125 10C11.5625 10 13 11.4375 13 13.2188V14.5ZM7 8C9.1875 8 11 6.21875 11 4C11 1.8125 9.1875 0 7 0C4.78125 0 3 1.8125 3 4C3 6.21875 4.78125 8 7 8ZM7 1C8.625 1 10 2.375 10 4C10 5.65625 8.625 7 7 7C5.34375 7 4 5.65625 4 4C4 2.375 5.34375 1 7 1Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.2188 2H4.03125L3.75 0.625C3.6875 0.28125 3.375 0 3.03125 0H0.375C0.15625 0 0 0.1875 0 0.375V0.625C0 0.84375 0.15625 1 0.375 1H2.8125L5 12.6562C4.6875 13.0312 4.5 13.5 4.5 14C4.5 15.125 5.375 16 6.5 16C7.59375 16 8.5 15.125 8.5 14C8.5 13.7188 8.375 13.2812 8.21875 13H12.75C12.5938 13.2812 12.5 13.7188 12.5 14C12.5 15.125 13.375 16 14.5 16C15.5938 16 16.5 15.125 16.5 14C16.5 13.4688 16.25 12.9375 15.875 12.5938C15.8125 12.25 15.5 12 15.1562 12H5.90625L5.53125 10H15.875C16.25 10 16.5312 9.78125 16.625 9.40625L17.9688 2.90625C18.0625 2.4375 17.7188 2 17.2188 2ZM7.5 14C7.5 14.5625 7.03125 15 6.5 15C5.9375 15 5.5 14.5625 5.5 14C5.5 13.4688 5.9375 13 6.5 13C7.03125 13 7.5 13.4688 7.5 14ZM14.5 15C13.9375 15 13.5 14.5625 13.5 14C13.5 13.4688 13.9375 13 14.5 13C15.0312 13 15.5 13.4688 15.5 14C15.5 14.5625 15.0312 15 14.5 15ZM15.6875 9H5.34375L4.21875 3H16.9375L15.6875 9Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="hamburger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="overlay"></div>
+        <!-- header menu end -->
+        <!-- banner slider section start -->
+        <section class="banner_section">
+            <div class="slider_main">
+                <!-- MAIN SLIDES -->
+                <div class="slider">
+                    <div data-index="1">
+                        <div class="slider_inner_box">
+                            <img src="assets/images/b_img1.png" alt="Img">
+                            <div class="slide_content">
+                                <div class="container">
+                                    <div class="slid_box_content">
+                                        <h1>Venice is like eating an entire box of chocolate liqueurs in one go.</h1>
+                                        <p>Spring Tavel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-index="2">
+                        <div class="slider_inner_box">
+                            <img src="assets/images/b_img2.png" alt="Img">
+                            <div class="slide_content">
+                                <div class="container">
+                                    <div class="slid_box_content">
+                                        <h1>Venice is like eating an entire box of chocolate liqueurs in one go.</h1>
+                                        <p>Spring Tavel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-index="3">
+                        <div class="slider_inner_box">
+                            <img src="assets/images/b_img3.png" alt="Img">
+                            <div class="slide_content">
+                                <div class="container">
+                                    <div class="slid_box_content">
+                                        <h1>Venice is like eating an entire box of chocolate liqueurs in one go.</h1>
+                                        <p>Spring Tavel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-index="4">
+                        <div class="slider_inner_box">
+                            <img src="assets/images/b_img4.png" alt="Img">
+                            <div class="slide_content">
+                                <div class="container">
+                                    <div class="slid_box_content">
+                                        <h1>Venice is like eating an entire box of chocolate liqueurs in one go.</h1>
+                                        <p>Spring Tavel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-index="5">
+                        <div class="slider_inner_box">
+                            <img src="assets/images/b_img5.png" alt="Img">
+                            <div class="slide_content">
+                                <div class="container">
+                                    <div class="slid_box_content">
+                                        <h1>Venice is like eating an entire box of chocolate liqueurs in one go.</h1>
+                                        <p>Spring Tavel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THUMBNAILS -->
+                <div class="slider_thumb">
+                    <div class="container">
+                        <div class="slider-nav-thumbnails">
+                            <div>
+                                <div class="thum_inner">
+                                    <span>1</span>
+                                    <p>Venice, Italy</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="thum_inner">
+                                    <span>2</span>
+                                    <p>Bali, Indonesia</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="thum_inner">
+                                    <span>3</span>
+                                    <p>Dubai, United Arab Emirates</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="thum_inner">
+                                    <span>4</span>
+                                    <p>Pattaya, Thailand</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="thum_inner">
+                                    <span>5</span>
+                                    <p>Madrid, Spain</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner slider section start -->
+        <!-- search section start -->
+        <section class="search_section">
+            <div class="container">
+                <div class="se_box">
+                    <div class="left_se">
+                        <div class="in_box">
+                            <label for="">Destination</label>
+                            <select name="" class="form_select">
+                                <option value="1">Venice, Italy</option>
+                                <option value="2">Venice, Italy</option>
+                                <option value="3">Venice, Italy</option>
+                                <option value="4">Venice, Italy</option>
+                            </select>
+                        </div>
+                        <div class="in_box">
+                            <label for="">Check In</label>
+                            <input type="date" class="form_input" placeholder="Check In">
+                        </div>
+                        <div class="in_box">
+                            <label for="">Check Out</label>
+                            <input type="date" class="form_input" placeholder="Check Out">
+                        </div>
+                    </div>
+                    <div class="right_button">
+                        <button class="serch_btn">book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search section end -->
+        <!-- we offer section start -->
+        <section class="img_content">
+            <div class="container">
+                <div class="img_content_box">
+                    <div class="img_left">
+                        <img src="assets/images/img1.png" alt="img">
+                    </div>
+                    <div class="right_content">
+                        <div class="inner_box">
+                            <small>We Offer</small>
+                            <h3>Planning Exquisite Travel Experience</h3>
+                            <span></span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="button_se">
+                                <button class="exp_btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- we offer section end -->
+        <!-- top Destination setion start -->
+        <section class="top_destination">
+            <div class="container">
+                <div class="main_box">
+                    <div class="top_box">
+                        <small>Explore</small>
+                        <h3>Top Destination</h3>
+                        <span></span>
+                    </div>
+                    <div class="bottom_box">
+                        <div class="des_box">
+                            <div class="in_box">
+                                <img src="assets/images/t_img1.png" alt="Dubai">
+                                <div class="in_conent">
+                                    <h4>Dubai</h4>
+                                    <p>City of roads & skyscrappers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="des_box">
+                            <div class="in_box">
+                                <img src="assets/images/t_img2.png" alt="Dubai">
+                                <div class="in_conent">
+                                    <h4>Singapore</h4>
+                                    <p>People with joy & enthusiastic</p>
+                                </div>
+                            </div>
+                            <div class="in_box">
+                                <img src="assets/images/t_img3.png" alt="Dubai">
+                                <div class="in_conent">
+                                    <h4>Paris</h4>
+                                    <p>City of love & food</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="des_box">
+                            <div class="in_box">
+                                <img src="assets/images/t_img4.png" alt="Dubai">
+                                <div class="in_conent">
+                                    <h4>Bali</h4>
+                                    <p>God of islands</p>
+                                </div>
+                            </div>
+                            <div class="in_box">
+                                <img src="assets/images/t_img5.png" alt="Dubai">
+                                <div class="in_conent">
+                                    <h4>Madrid</h4>
+                                    <p>City of elegant boulevards & manicured parks</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- top Destination setion end -->
+        <!-- Footer start -->
+        <footer class="footer_section">
+            <div class="container">
+                <div class="footer_top">
+                    <div class="fo_main">
+                        <div class="fo_box">
+                            <h5><a href="#" target="_blank">Destinations</a></h5>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank">Africa </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Antarctica</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Asia</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Caribbean Islands</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Central America</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Europe</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Middle East</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">North America</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Pacific</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">South America</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fo_box">
+                            <h5><a href="#" target="_blank">Shops</a></h5>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank">Destination guides</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">eBooks</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Pictorial & gifts</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Phrasebooks</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Lonely Planet Kids</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Special offers</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fo_box">
+                            <h5><a href="#" target="_blank">Community</a></h5>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank">Country forums</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Interest forums</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Talk to Lonely Planet</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fo_box">
+                            <h5><a href="#" target="_blank">Interests</a></h5>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank">Adventure travel </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Art and culture</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Backpacking</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Beaches, coasts and islands</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Family holidays</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Festivals</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Food and drink</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Honeymoon and romance</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Road trips</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Travel gear and tech</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Travel on a budget</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Wildlife and nature</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fo_box">
+                            <h5><a href="#" target="_blank">Travel Booking</a></h5>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank">Hotels </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Flights</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Insurance</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fo_box">
+                            <h5><a href="#" target="_blank">Policy</a></h5>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank">Terms & Conditions </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="fb_bo_main">
+                        <div class="le_fo">
+                            <ul>
+                                <li><a href="#" target="_blank">About us</a></li>
+                                <li><a href="#" target="_blank">Work for Us</a></li>
+                                <li><a href="#" target="_blank">Contact us</a></li>
+                                <li><a href="#" target="_blank">Press, trade and advertising</a></li>
+                                <li><a href="#" target="_blank">ArrivalGuides</a></li>
+                                <li><a href="#" target="_blank">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="re_fo">
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+
+    </main>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js'></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+
+</html>
